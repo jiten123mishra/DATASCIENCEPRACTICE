@@ -1,0 +1,18 @@
+01.MULTPLE_REGRESION_ASSUMPTIONS
+ verify all 5 assumptions  with remedies 
+02.multiple_linear_regression_Advertisement
+  splitting to train and test data 
+  handling categorical data through one hot encoding 
+  predict accuracy 
+  Finding optimum model using backward elimination .
+  plot graph between dependant and independent variable 
+  save model and predict from model
+03.DEPLOY_REGRESSION_MODEL_IN_CLOUD_FOUNDRY
+  Deploying final model in cloud foundry using flask 
+  model will get trained in cloud and we can predict result using POSTMAN 
+04.MULTILINEAR REGRESSION ON START UP DATA
+    as discussed in class 
+
+05. DETECT AND REMOVE OUTLIER 
+   REMOVE OUTLIER USING Z SCORE AND IQR
+   DETECT OUTLIER USING BOX PLOT,SCATTER PLOT , Z SCORE 

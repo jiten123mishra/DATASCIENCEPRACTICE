@@ -1,0 +1,8 @@
+1.open command prompt in Administrative mode 
+net start MongoDB
+2.open command prompt here 
+  C:\ACAD_GLD\FLASK
+  python app.py 
+3.Go to http://localhost:5000/ in google chrome 
+
+ 

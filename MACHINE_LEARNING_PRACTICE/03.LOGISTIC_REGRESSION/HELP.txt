@@ -1,0 +1,16 @@
+01. AFFAIR DATA SET 
+# NULL ERROR RATE 
+# NEW WAY TO HANDEL DUMMY VARIABLE TRAP 
+# TAUGHT INSIDE CLASS
+# K FOLD CROSS VALIDATION 
+
+02.BANK DATA 
+   END TO END 
+   # Data exploration 
+   # visualization
+   # CREATE dummy variable
+   #oversampling using SMOTE
+   # Recursive feature elimination 
+   #elimination based on P value 
+   #LOGISTIC REGRESSION 
+   # CONFUSION MATRIX , PRECISION , RECALL , ROC detailed 

@@ -1,0 +1,27 @@
+01.Linear regression in gradient descent
+
+for theory of gradient descent refer notebook 
+LINEAR REGRESSION USING GRADIENT DESCENT 
+change history of m and c value 
+see change of of m and c in graph 
+3d graph between e , m and c 
+
+use : put the code in jupyter notebook 
+   
+
+
+02.Linear regression in SKlearn 
+reading csv files for years of experience and salary 
+splitting data into training and testing
+making prediction
+optimum line with training data graph 
+optimum line with test data graph 
+plotting graph between predicted value and actual value 
+saving model into .sav file and predict result from that .sav file 
+
+
+03.LINEARREGRESSION_IN_SK_LEARN_AND_GD
+reading data and predicting a model using 
+a.sklearn 
+b.gradient descent 
+ 

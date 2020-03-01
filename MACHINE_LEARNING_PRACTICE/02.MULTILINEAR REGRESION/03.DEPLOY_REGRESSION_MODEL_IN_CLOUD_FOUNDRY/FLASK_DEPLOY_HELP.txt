@@ -1,0 +1,148 @@
+STEP1:Create an account with pivotal cloudfoundry 
+Login to CF CLI :
+https://login.run.pivotal.io/login
+UN:jiten123mishra@gmail.com
+PW:JI11**ra
+Then go to pivotal web services 
+
+STEP:2
+Install CF CLI :
+If facing issue after running cf in command propmpt like access denied 
+then follow :https://github.com/cloudfoundry/cli/issues/522
+set environment variable
+
+STEP:3
+FIRST WE WILL TEST IN LOCAL IF IN LOCAL IT WORKS FINE WE WILL DEPLOY IN CLOUD 
+CREATE A VIRTUAL  ENVIRONMENT :Why ?
+In virtual environment we can install specific version of related software  which will not impact our base version .
+Open Anaconda Prompt  in Admin mode :
+
+conda create -n MY_ML_1 python=3.6
+#Activate virtual environment
+conda activate MY_ML_1
+
+If getting error :
+conda config --set ssl_verify no
+
+#Deactivate virtual environment
+conda deactivate
+
+STEP:4:
+Install required version of software 
+WAY-1:
+Go to 
+cd C:\JITENDRA\SOFT\TEST\selflearn-master (2)\selflearn-master\02.MULTILINEAR REGRESION\MULTILINEAR_FOR_ADV_DATA\03.DEPLOY_REGRESSION_MODEL_IN_CLOUD_FOUNDRY\MODEL_WITH_FLASK
+
+pip install -r requirements.txt --trusted-host pypi.org --trusted-host files.pythonhosted.org
+pip install --upgrade tensorflow --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+WAY-2:
+if we dont know what are the relevant packages then we can do that by one by one trail and error basis 
+Go to C:\JITENDRA\SOFT\TEST\selflearn-master (2)\selflearn-master\02.MULTILINEAR REGRESION\MULTILINEAR_FOR_ADV_DATA\03.DEPLOY_REGRESSION_MODEL_IN_CLOUD_FOUNDRY\MODEL_WITH_FLASK
+a.python main.py
+b.we will get error No module named flask found 
+c.then do
+  pip install pyramid --trusted-host pypi.org --trusted-host files.pythonhosted.org
+  
+repeat step a , b , c till all error got resolved 
+pip install numpy --trusted-host pypi.org --trusted-host files.pythonhosted.org
+pip install pandas --trusted-host pypi.org --trusted-host files.pythonhosted.org
+pip install sklearn --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+then run python main.py 
+we will get 
+Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+
+open postman :
+POST:http://0.0.0.0:5000/train
+we should get success as output 
+means model got trained 
+GET:http://0.0.0.0:5000/predict?val1=100&val2=200&val3=300
+we will get prediction 
+Now our model is working fine in local we need to deploy it in cloud 
+
+since in our virtual environment  we have installed all required packages 
+we can generate requirements .txt so that the requiremnets.txt will be installed 
+in cloud 
+pip freeze >requirements.txt
+
+
+#####################################
+MODIFIED 
+STEP :5:
+In main.py comment local mode and enable cloud mode 
+HOW to push code :
+
+Go to the folder where code is loacted in windows explorere 
+C:\ACAD_GLD\MACHINE_LEARNING\02.MULTILINEAR REGRESION\03.DEPLOY_REGRESSION_MODEL_IN_CLOUD_FOUNDRY\MODEL_WITH_FLASK
+shift right click open command prompt here 
+cf 
+cf  login -a https://api.run.pivotal.io
+Email:jiten123mishra@gmail.com
+Password:JI11**ra
+cf push
+##################################### 
+
+same can be viewed from :
+https://login.run.pivotal.io/login?discoveryPerformed=true&email=jiten123mishra%40gmail.com
+then pivotal webservices 
+
+Appilcation URL can be found from both URL and cfcli
+
+In postman :
+POST
+http://jitendratestflask-talkative-swan.cfapps.io/train
+result should be success
+GET
+http://jitendratestflask-talkative-swan.cfapps.io/predict?val1=100&val2=200&val3=300
+should predict value 
+if http is not working use https and vice versa 
+
+
+
+FOR RANDOM FOREST DEPLOYMENT EXAMPLE
+LOCAL
+POST:
+http://0.0.0.0:5000/train
+GET:
+http://0.0.0.0:5000/predict?val1=138&val2=73&val3=11&val4=276&val5=120&val6=0&val7=42&val8=17&val9=1&val10=1
+
+FOR RANDOM FOREST DEPLOYMENT EXAMPLE 
+CLOUD
+POST :
+http://jitendratestflask-talkative-swan.cfapps.io/train
+GET:
+http://jitendratestflask-talkative-swan.cfapps.io/predict?val1=138&val2=73&val3=11&val4=276&val5=120&val6=0&val7=42&val8=17&val9=1&val10=1
+
+
+
+cf 
+cf  login -a https://api.run.pivotal.io
+Email:jiten123mishra@gmail.com
+Password:JI11**ra
+cd C:\JITENDRA\SOFT\TEST\selflearn-master (2)\selflearn-master\02.MULTILINEAR REGRESION\MULTILINEAR_FOR_ADV_DATA\03.DEPLOY_REGRESSION_MODEL_IN_CLOUD_FOUNDRY\MODEL_WITH_FLASK
+cf push 
+FOR KNN DEPLOYMENT EXAMPLE
+LOCAL
+POST:
+http://0.0.0.0:5000/train
+GET:
+http://0.0.0.0:5000/predict?val1=5.1&val2=4.2&val3=4.3&val4=5.2&val5=7.1&val6=0&val7=10.5&val8=3.7&val9=2.9&val10=1.3
+
+FOR KNN  DEPLOYMENT EXAMPLE 
+CLOUD
+POST :
+http://jitendratestflask-talkative-swan.cfapps.io/train
+GET:
+http://jitendratestflask-talkative-swan.cfapps.io/predict?val1=138&val2=73&val3=11&val4=276&val5=120&val6=0&val7=42&val8=17&val9=1&val10=1
+
+
+
+use below code to get rid of production error issue :
+    #app.run(host='0.0.0.0', port=port)
+    
+    host = '0.0.0.0'
+    port = 5000
+    httpd = simple_server.make_server(host, port, app)
+    print("Serving on %s %d" % (host, port))
+    httpd.serve_forever()
