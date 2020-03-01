@@ -1,0 +1,48 @@
+1.CREATE MODEL GET PIKL FILE GET OUTPUT i.e model.py 
+  model.py 
+  output is model.pkl
+
+3.Anaconda propmpt
+  cd C:\ACAD_GLD\MACHINE_LEARNING\10.DEPLOYMENT\DEPLYOING MULTIPLE LINE IN HEROKU\HEROKU
+  python app.py 
+4. Go to chrome 
+   http://127.0.0.1:5000/
+5. Go to github create a repository HEROKUDEMO with public mode 
+6..Now create app.py,model.pkl we have , proc file ,templates 
+   prepare requirements.txt
+   --Go to anaconda prompt 
+          conda env remove -n MY_ML_1
+          conda create -n MY_ML_1 python=3.6
+          #Activate virtual environment
+          conda activate MY_ML_1
+          cd C:\ACAD_GLD\MACHINE_LEARNING\10.DEPLOYMENT\DEPLYOING MULTIPLE LINE IN HEROKU\HEROKU
+          python app.py
+          error we will get install one by one 
+          ex:
+          pip install numpy --trusted-host pypi.org --trusted-host files.pythonhosted.org
+          when python app.py is successful
+          th pip freeze >requirements.txt
+          add gunicorn==19.9.0 in requirements.txt
+          
+7.put relevant files in C:\ACAD_GLD\MACHINE_LEARNING\10.DEPLOYMENT\DEPLYOING MULTIPLE LINE IN HEROKU\RELEVANT
+8.Move relevant files to git 
+  https://github.com/jiten123mishra/HEROKUDEMO
+9.login to heroku
+  username:jiten123mishra@gmail.com
+  password:JI11**ra
+  create new app
+  name of app :mymllearn
+  DEploymrnt method :github
+  authorise git 
+  search herokudemo repository 
+  then deploy branch 
+  view we will get 
+  
+10. to see logs 
+    it is not working in office pc do in sagarika pc with powershell
+    commad prompt: heroku login 
+    heroku logs --app mymllearn 
+    
+11.how to use as an api 
+
+   
