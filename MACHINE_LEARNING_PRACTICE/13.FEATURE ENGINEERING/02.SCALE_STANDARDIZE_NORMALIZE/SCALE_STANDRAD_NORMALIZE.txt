@@ -1,0 +1,2 @@
+https://towardsdatascience.com/scale-standardize-or-normalize-with-scikit-learn-6ccc7d176a02
+https://www.kaggle.com/jfeng1023/data-cleaning-challenge-scale-and-normalize-data

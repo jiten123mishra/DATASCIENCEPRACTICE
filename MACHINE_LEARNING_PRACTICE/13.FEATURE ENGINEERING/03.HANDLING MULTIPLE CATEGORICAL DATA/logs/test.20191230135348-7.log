@@ -1,0 +1,80 @@
+2019-12-30 13:53:48,218 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 13:53:48,219 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 13:53:48,219 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 13:53:48,220 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 13:53:48,221 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 13:53:49,709 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 13:53:49,709 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 13:53:49,710 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230135348-7
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230135348-7.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230135348-7;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230135348-7.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 13:53:49,711 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+2019-12-30 13:53:49,712 - teradata.udaexec - ERROR - Unable to create connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+Traceback (most recent call last):
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\udaexec.py", line 183, in connect
+    **args))
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 427, in __init__
+    connectParams["DRIVER"] = determineDriver(dbType, driver)
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 381, in determineDriver
+    " Available drivers: {}".format(driver, ",".join(drivers)))
+teradata.api.InterfaceError: ('DRIVER_NOT_FOUND', "No driver found with name 'Teradata Database ODBC Driver 16.20'.  Available drivers: SQL Server,Hortonworks Hive ODBC Driver,Hortonworks Spark ODBC Driver")
+2019-12-30 13:53:58,300 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 13:53:58,301 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 13:53:58,301 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 13:53:58,302 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 13:53:58,303 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 13:53:58,757 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 13:53:58,757 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 13:53:58,758 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230135358-8
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230135358-8.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230135358-8;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230135358-8.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 13:53:58,760 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+2019-12-30 13:53:58,761 - teradata.udaexec - ERROR - Unable to create connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+Traceback (most recent call last):
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\udaexec.py", line 183, in connect
+    **args))
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 427, in __init__
+    connectParams["DRIVER"] = determineDriver(dbType, driver)
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 381, in determineDriver
+    " Available drivers: {}".format(driver, ",".join(drivers)))
+teradata.api.InterfaceError: ('DRIVER_NOT_FOUND', "No driver found with name 'Teradata Database ODBC Driver 16.20'.  Available drivers: SQL Server,Hortonworks Hive ODBC Driver,Hortonworks Spark ODBC Driver")
+2019-12-30 13:54:47,045 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,046 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,047 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,048 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,049 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,050 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,052 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 13:54:47,053 - teradata.udaexec - INFO - UdaExec exiting.

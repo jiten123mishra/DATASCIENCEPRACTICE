@@ -1,0 +1,172 @@
+2019-12-30 13:59:30,717 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 13:59:30,718 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 13:59:30,718 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 13:59:30,718 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 13:59:30,719 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 13:59:31,536 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 13:59:31,536 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 13:59:31,536 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230135930-10
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230135930-10.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230135930-10;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230135930-10.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 13:59:31,537 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+2019-12-30 13:59:35,659 - teradata.udaexec - ERROR - Unable to create connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+Traceback (most recent call last):
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\udaexec.py", line 183, in connect
+    **args))
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 454, in __init__
+    checkStatus(rc, hDbc=self.hDbc, method="SQLDriverConnectW")
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 231, in checkStatus
+    raise DatabaseError(i[2], u"[{}] {}".format(i[0], msg), i[0])
+teradata.api.DatabaseError: (210, '[28000] [Teradata][ODBC Teradata Driver][Teradata Database] (210) The UserId, Password or Account is invalid. FailCode = -8017')
+2019-12-30 14:01:01,704 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 14:01:01,704 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 14:01:01,705 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 14:01:01,705 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 14:01:01,705 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 14:01:04,420 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 14:01:04,420 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 14:01:04,420 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230140101-11
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140101-11.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230140101-11;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140101-11.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 14:01:04,421 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+2019-12-30 14:01:08,806 - teradata.udaexec - ERROR - Unable to create connection: {'method': 'odbc', 'system': 'TDPG', 'username': 'ine12363221', 'password': 'XXXXXX', 'driver': 'Teradata Database ODBC Driver 16.20'}
+Traceback (most recent call last):
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\udaexec.py", line 183, in connect
+    **args))
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 454, in __init__
+    checkStatus(rc, hDbc=self.hDbc, method="SQLDriverConnectW")
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 231, in checkStatus
+    raise DatabaseError(i[2], u"[{}] {}".format(i[0], msg), i[0])
+teradata.api.DatabaseError: (210, '[28000] [Teradata][ODBC Teradata Driver][Teradata Database] (210) The UserId, Password or Account is invalid. FailCode = -8017')
+2019-12-30 14:05:27,777 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 14:05:27,778 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 14:05:27,778 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 14:05:27,778 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 14:05:27,779 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 14:05:28,268 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 14:05:28,268 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 14:05:28,268 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230140527-12
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140527-12.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230140527-12;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140527-12.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 14:05:28,269 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'driver': 'Teradata Database ODBC Driver 16.20', 'Authentication': 'LDAP', 'UID': 'INE12363221', 'PWD': 'JI55**ra', 'password': 'XXXXXX'}
+2019-12-30 14:05:28,272 - teradata.udaexec - ERROR - Unable to create connection: {'method': 'odbc', 'driver': 'Teradata Database ODBC Driver 16.20', 'Authentication': 'LDAP', 'UID': 'INE12363221', 'PWD': 'JI55**ra', 'password': 'XXXXXX'}
+Traceback (most recent call last):
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\udaexec.py", line 183, in connect
+    **args))
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 454, in __init__
+    checkStatus(rc, hDbc=self.hDbc, method="SQLDriverConnectW")
+  File "C:\Users\INE12363221\AppData\Local\Continuum\anaconda3\lib\site-packages\teradata\tdodbc.py", line 231, in checkStatus
+    raise DatabaseError(i[2], u"[{}] {}".format(i[0], msg), i[0])
+teradata.api.DatabaseError: (10380, '[08001] [Teradata][ODBC] (10380) Unable to establish connection with data source. Missing settings: {[DBCName]}')
+2019-12-30 14:06:00,423 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 14:06:00,423 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 14:06:00,424 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 14:06:00,424 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 14:06:00,425 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 14:06:00,937 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 14:06:00,938 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 14:06:00,938 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230140600-13
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140600-13.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230140600-13;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140600-13.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 14:06:00,939 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'driver': 'Teradata Database ODBC Driver 16.20', 'Authentication': 'LDAP', 'UID': 'INE12363221', 'PWD': 'JI55**ra', 'DBCName': 'TDPG', 'password': 'XXXXXX'}
+2019-12-30 14:06:06,485 - teradata.udaexec - INFO - Connection successful. Duration: 5.545 seconds. Details: {'method': 'odbc', 'driver': 'Teradata Database ODBC Driver 16.20', 'Authentication': 'LDAP', 'UID': 'INE12363221', 'PWD': 'JI55**ra', 'DBCName': 'TDPG', 'password': 'XXXXXX'}
+2019-12-30 14:06:07,183 - teradata.udaexec - INFO - Query Successful. Duration: 0.430 seconds, Rows: 16, Query: SELECT * FROM ine12363221.parsertest ;
+2019-12-30 14:08:42,961 - teradata.udaexec - INFO - Initializing UdaExec...
+2019-12-30 14:08:42,962 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+2019-12-30 14:08:42,962 - teradata.udaexec - INFO - Found run number file: "C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\.runNumber"
+2019-12-30 14:08:42,962 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2019-12-30 14:08:42,963 - teradata.udaexec - INFO - Removed 0 log files.
+2019-12-30 14:08:43,441 - teradata.udaexec - INFO - Checkpoint file not found: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\test.checkpoint
+2019-12-30 14:08:43,442 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2019-12-30 14:08:43,442 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: test
+ *          Version: 1.0
+ *       Run Number: 20191230140842-14
+ *             Host: INLTH5CG7041N0Q
+ *         Platform: Windows-10-10.0.14393-SP0
+ *          OS User: INE12363221
+ *   Python Version: 3.7.4
+ *  Python Compiler: MSC v.1915 64 bit (AMD64)
+ *     Python Build: ('default', 'Aug  9 2019 18:34:13')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:/ACAD_GLD/MACHINE_LEARNING/13.FEATURE ENGINEERING/HANDLING MULTIPLE CATEGORICAL DATA/untitled1.py
+ *      Working Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA
+ *          Log Dir: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs
+ *         Log File: C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140842-14.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\INE12363221\\udaexec.ini: Not Found', 'C:\\ACAD_GLD\\MACHINE_LEARNING\\13.FEATURE ENGINEERING\\HANDLING MULTIPLE CATEGORICAL DATA\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=test;Version=1.0;JobID=20191230140842-14;ClientUser=INE12363221;Production=False;udaAppLogFile=C:\ACAD_GLD\MACHINE_LEARNING\13.FEATURE ENGINEERING\HANDLING MULTIPLE CATEGORICAL DATA\logs\test.20191230140842-14.log;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2019-12-30 14:08:43,444 - teradata.udaexec - INFO - Creating connection: {'method': 'odbc', 'driver': 'Teradata Database ODBC Driver 16.20', 'Authentication': 'LDAP', 'UID': 'INE12363221', 'PWD': 'JI55**ra', 'DBCName': 'TDPG', 'password': 'XXXXXX'}
+2019-12-30 14:08:48,908 - teradata.udaexec - INFO - Connection successful. Duration: 5.464 seconds. Details: {'method': 'odbc', 'driver': 'Teradata Database ODBC Driver 16.20', 'Authentication': 'LDAP', 'UID': 'INE12363221', 'PWD': 'JI55**ra', 'DBCName': 'TDPG', 'password': 'XXXXXX'}
+2019-12-30 14:08:49,158 - teradata.udaexec - INFO - Query Successful. Duration: 0.248 seconds, Rows: 16, Query: SELECT * FROM ine12363221.parsertest ;
+2019-12-30 14:22:21,552 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 14:22:21,552 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 14:22:21,552 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 14:22:21,553 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 14:22:21,553 - teradata.udaexec - INFO - UdaExec exiting.
+2019-12-30 14:22:21,613 - teradata.udaexec - INFO - UdaExec exiting.

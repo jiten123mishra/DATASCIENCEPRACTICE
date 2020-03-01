@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Search</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="sepal_length" id="sepal_length" placeholder="sepal length in cm" step="any">
+            <input type="number" name="sepal_width" id="sepal_width" placeholder="sepal width in cm" step="any">
+            <input type="number" name="petal_length" id="petal_length" placeholder="petal length in cm" step="any">
+            <input type="number" name="petal_width" id="petal_width" placeholder="petal width in cm" step="any">
+            <input type="submit" value="Check the Flower Category">
+        </form>
+    </div>
+</div>
+{% endblock %}

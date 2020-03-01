@@ -1,0 +1,4 @@
+Here we will be discussing several way of feature selection 
+CORRELATION
+BACKWARD ELIMINATION 
+RFE
