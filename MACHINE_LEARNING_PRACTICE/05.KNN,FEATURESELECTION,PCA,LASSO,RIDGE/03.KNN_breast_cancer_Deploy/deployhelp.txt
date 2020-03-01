@@ -1,0 +1,31 @@
+
+cf 
+cf  login -a https://api.run.pivotal.io
+Email:jiten123mishra@gmail.com
+Password:JI11**ra
+cd C:\JITENDRA\SOFT\TEST\selflearn-master (2)\selflearn-master\02.MULTILINEAR REGRESION\MULTILINEAR_FOR_ADV_DATA\03.DEPLOY_REGRESSION_MODEL_IN_CLOUD_FOUNDRY\MODEL_WITH_FLASK
+cf push 
+FOR KNN DEPLOYMENT EXAMPLE
+LOCAL
+POST:
+http://0.0.0.0:5000/train
+GET:
+http://0.0.0.0:5000/predict?val1=5.1&val2=4.2&val3=4.3&val4=5.2&val5=7.1&val6=0&val7=10.5&val8=3.7&val9=2.9&val10=1.3
+
+FOR KNN  DEPLOYMENT EXAMPLE 
+CLOUD
+POST :
+http://jitendratestflask-talkative-swan.cfapps.io/train
+GET:
+http://jitendratestflask-talkative-swan.cfapps.io/predict?val1=138&val2=73&val3=11&val4=276&val5=120&val6=0&val7=42&val8=17&val9=1&val10=1
+
+
+use this :
+
+    #app.run(host='0.0.0.0', port=port)
+    
+    host = '0.0.0.0'
+    port = 5000
+    httpd = simple_server.make_server(host, port, app)
+    print("Serving on %s %d" % (host, port))
+    httpd.serve_forever()
